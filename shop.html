@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emil Ebrahimi">
+    <meta name="keywords" content="Anime, Steins;Gate, Mad Scientist, Best anime">
+    <meta name="description" content="Learn more about Steins;Gate AKA the best anime ever, trust me bro">
+    <script src="https://kit.fontawesome.com/93d286b065.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <title>Steins;Gate | Shop</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure><img id="logo" src="images/logo-nav.png" alt="Steins;gate logo"></figure>
+            <ul id="desktop">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item active"><a href="shop.html">Shop</a></li>
+                <li class="nav-item"><a href="sources.html">Sources</a></li>
+            </ul>
+            <a id="boorgir" href="javascript:void(0);" class="icon" onclick="boorgirClick()"><i
+                    class="fa-solid fa-bars"></i></a>
+            <ul id="boorgirItems">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item active"><a href="shop.html">Shop</a></li>
+                <li class="nav-item"><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <section class="modal-content">
+            <i class="fa-solid fa-circle-xmark close"></i>
+            <h2>BUY NOW</h2>
+            <form action="shop.html" id="form" class="validate">
+                <section class="form-field">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="full-name" id="full-name" placeholder="Your Name Mate" required />
+                </section>
+                <section class="form-field">
+                  <label for="email-input">Email</label>
+                  <input type="email" name="email-input" id="email-input" placeholder="example@hsleiden.nl" required />
+                </section>
+                <section class="form-field">
+                  <label for="place-order"></label>
+                  <input type="submit" id="place-order" value="Place Order" />
+                </section>
+              </form>
+        </section>
+
+    </section>
+    <section class="background">
+        <section class="wrapper">
+            <section id="banner">
+            </section>
+
+            <section id="filters">
+                <h2>OUR COLLECTION</h2>
+                <label for="anime">Anime</label>
+                <input type="checkbox" id="anime" onclick="checkTheChecks()">
+                <label for="figurines">Figurines</label>
+                <input type="checkbox" id="figurines" onclick="checkTheChecks()">
+            </section>
+
+            <article>
+                <section class="product" id="animeSectie" data-anime="true">
+                    <section class="kaart">
+                        <figure>
+                            <img class ="myBtn" src="images/bluray.png" alt="Bluray copy of Steins;Gate">
+                            <figcaption>Steins;Gate Collection</figcaption>
+                        </figure>
+                        <p class="order">Order Now!</p>
+                        <p>12 bucks</p>
+                    </section>
+
+                    <section class="kaart">
+                        <figure>
+                            <img class ="myBtn" src="images/psvita.png" alt="Steins;Gate Psvita Game">
+                            <figcaption>Steins;Gate Psvita</figcaption>
+                        </figure>
+                        <p class="order">Order Now!</p>
+                        <p>10 bucks</p>
+                    </section>
+
+                    <section class="kaart">
+                        <figure>
+                            <img class ="myBtn" src="images/shirt.png" alt="Steins;Gate shirt">
+                            <figcaption>Steins;Gate shirt</figcaption>
+                        </figure>
+                        <p class="order">Order Now!</p>
+                        <p>8 bucks</p>
+                    </section>
+
+                    <section class="kaart">
+                        <figure>
+                            <img class ="myBtn" src="images/bluray.png" alt="Bluray copy of Steins;Gate">
+                            <figcaption>Steins;Gate Collection</figcaption>
+                        </figure>
+                        <p class="order">Order Now!</p>
+                        <p>12 bucks</p>
+                    </section>
+                </section>
+
+                <section id="figurinesSectie" data-figurines="true" class="product">
+                    <section class="kaart">
+                        <figure>
+                            <img class ="myBtn" src="images/kurisu.jpg" alt="Kurisu figurine">
+                            <figcaption>Kurisu Figurine</figcaption>
+                        </figure>
+                        <p class="order">Order Now!</p>
+                        <p>12 bucks</p>
+                    </section>
+
+                    <section class="kaart">
+                        <figure>
+                            <img class ="myBtn" src="images/yukuta.jpg" alt="Yukuta figurine">
+                            <figcaption>Yukuta | Figurine</figcaption>
+                        </figure>
+                        <p class="order">Order Now!</p>
+                        <p>10 bucks</p>
+                    </section>
+
+                    <section class="kaart">
+                        <figure>
+                            <img class ="myBtn" src="images/mayuri.jpg" alt="Mayurifigurine">
+                            <figcaption>Mayuri | Figurine</figcaption>
+                        </figure>
+                        <p class="order">Order Now!</p>
+                        <p>8 bucks</p>
+                    </section>
+
+                    <section class="kaart">
+                        <figure>
+                            <img class ="myBtn" src="images/rintaro.jpg" alt="Rintaro Figurine">
+                            <figcaption>Rintaro | Figurine</figcaption>
+                        </figure>
+                        <p class="order">Order Now!</p>
+                        <p>12 bucks</p>
+                    </section>
+                </section>
+            </article>
+        </section>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/sub.js"></script>
+</body>
+</html>
